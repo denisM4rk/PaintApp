@@ -1,0 +1,55 @@
+﻿<Window x:Class="PaintApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PaintApp"
+        mc:Ignorable="d"
+        Title="Графический редактор" Height="450" Width="860" MinHeight="450" MinWidth="860">
+
+    <Window.Background>
+        <LinearGradientBrush>
+            <GradientStop Color="LawnGreen" Offset="0"></GradientStop>
+            <GradientStop Color="White" Offset="1"></GradientStop>
+        </LinearGradientBrush>
+    </Window.Background>
+
+    <Grid>
+        <InkCanvas Name="inkCanvas"  HorizontalAlignment="Left"
+                     Height="309" Margin="10,10,10,10" VerticalAlignment="Center" Width="830"/>
+        <!--<Button Content="Очистить" Click="buttonClear" 
+                     HorizontalAlignment="Left" Margin="10,337,0,0" VerticalAlignment="Top" Width="75" Height="50"/>
+        <Button Content="Закрыть" Click="buttonClose"  
+                     HorizontalAlignment="Left" Margin="100,337,0,0" VerticalAlignment="Top" Width="75" Height="50"/>
+        <Button Content="Сохранить" Click="buttonSave" 
+                     HorizontalAlignment="Left" Margin="190,337,0,0" VerticalAlignment="Top" Width="75" Height="50"/>-->
+
+        <DockPanel VerticalAlignment="Top" Grid.ColumnSpan="2">
+
+            <ToolBar VerticalAlignment="Stretch" Height="41">
+                <Button Click="buttonSave">
+                    <Image Source="Images/1.png"  Height="28" Width="29"/>
+                </Button>
+                <Separator />
+                <Button Click="buttonClear">
+                    <Image Source="Images/3.png"  Height="30" Width="35" />
+                </Button>
+                <Separator />
+                <Button Click="buttonClose">
+                    <Image Source="Images/2.png" Height="27" Width="30"/>
+                </Button>
+            </ToolBar>
+        </DockPanel>
+
+        <Slider x:Name="sld_RedColor" Background="Red" Minimum="0" Maximum="255" HorizontalAlignment="Left" 
+                      VerticalAlignment="Bottom" Margin="10" Width="269" ValueChanged="sld_Color_ValueChanged"/>
+        <Slider x:Name="sld_GreenColor" Background="Green" Minimum="0" Maximum="255" HorizontalAlignment="Center" 
+                     VerticalAlignment="Bottom" Margin="10" Width="269" ValueChanged="sld_Color_ValueChanged"/>
+        <Slider x:Name="sld_BlueColor" Background="Blue" Minimum="0" Maximum="255" HorizontalAlignment="Right" 
+                     Margin="10" VerticalAlignment="Bottom" Width="269" ValueChanged="sld_Color_ValueChanged"/>
+
+        <Label x:Name="lbl1" HorizontalAlignment="Left" Margin="105,35" VerticalAlignment="Bottom"/>
+
+        <Label HorizontalAlignment="Left" Margin="5,30" VerticalAlignment="Bottom">Выберите цвет</Label>
+    </Grid>
+</Window>

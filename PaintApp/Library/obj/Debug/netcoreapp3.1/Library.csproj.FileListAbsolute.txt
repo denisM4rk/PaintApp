@@ -1,0 +1,9 @@
+C:\Users\Денис-ПК\Desktop\paint\PaintApp\Library\bin\Debug\netcoreapp3.1\Library.deps.json
+C:\Users\Денис-ПК\Desktop\paint\PaintApp\Library\bin\Debug\netcoreapp3.1\Library.dll
+C:\Users\Денис-ПК\Desktop\paint\PaintApp\Library\bin\Debug\netcoreapp3.1\Library.pdb
+C:\Users\Денис-ПК\Desktop\paint\PaintApp\Library\obj\Debug\netcoreapp3.1\Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Денис-ПК\Desktop\paint\PaintApp\Library\obj\Debug\netcoreapp3.1\Library.AssemblyInfoInputs.cache
+C:\Users\Денис-ПК\Desktop\paint\PaintApp\Library\obj\Debug\netcoreapp3.1\Library.AssemblyInfo.cs
+C:\Users\Денис-ПК\Desktop\paint\PaintApp\Library\obj\Debug\netcoreapp3.1\Library.csproj.CoreCompileInputs.cache
+C:\Users\Денис-ПК\Desktop\paint\PaintApp\Library\obj\Debug\netcoreapp3.1\Library.dll
+C:\Users\Денис-ПК\Desktop\paint\PaintApp\Library\obj\Debug\netcoreapp3.1\Library.pdb
